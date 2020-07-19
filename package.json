@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www"
+    "dev": "nodemon ./bin/www",
+    "gcp:docker-build":"docker build -t gcr.io/$DEVSHELL_PROJECT_ID/my-table-node:0.0.1 . "
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
